@@ -1,0 +1,9 @@
+language: bash
+
+before_script:
+- curl -L "http://downloads.sourceforge.net/shunit2/shunit2-2.0.3.tgz" | tar zx
+
+script:
+- sudo chmod a+x folder.sh
+- sudo chmod a+x test.sh
+- ./test.sh
